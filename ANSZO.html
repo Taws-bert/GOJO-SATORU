@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Picture Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #1E3C72, #2A5298);
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            background: #FF5733;
+            color: white;
+            border-radius: 5px;
+        }
+        .anime-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>THE STRONGEST SORCERER</h1>
+        <p>GOJO SATORU - The strongest sorcerer in Jujutsu Kaisen, known for his immense cursed energy and mastery of the Limitless technique, which allows him to manipulate space itself. As the wielder of the Six Eyes, he has unparalleled perception and efficiency in cursed energy usage. His Domain Expansion, Unlimited Void, traps opponents in an overwhelming state of infinite knowledge, rendering them incapable of action. He is a master martial artist, possessing extraordinary speed, strength, and intelligence, making him nearly invincible in battle. Despite his immense power, he is playful, charismatic, and deeply cares for his students, aiming to reform the sorcerer society for the better.</p>
+        <button onclick="toggleTheme()">Change Theme</button>
+        <img class="anime-img" src="https://th.bing.com/th/id/OIP.inOb53zrTbs7-Qyt2lcbuwHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Anime Character">
+    </div>
+    
+    <script>
+        function toggleTheme() {
+            document.body.style.background = 
+                document.body.style.background === 'black' ? 'linear-gradient(to right, #1E3C72, #2A5298)' : 'black';
+            document.body.style.color = 
+                document.body.style.color === 'white' ? '#fff' : 'white';
+        }
+    </script>
+</body>
+</html>
